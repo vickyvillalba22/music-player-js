@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="assets/css/basic-styles.css">
+    <link rel="stylesheet" href="assets/css/specific-styles.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+</head>
+<body>
+
+    <header></header>
+
+    <main>
+
+        <section class="section1 w100 vh100 df centerX centerY">
+
+            <!--audio-->
+            <audio id="cancion" src=""></audio>
+
+            <!--cont reproductor-->
+            <div id="contReproductor" class="df columna centerY spacee">
+
+                    <img id="portada" class="w90 h55 objCover bordeRedondo" src="" alt="">
+                    <div id="conTitulos" class=" df columna spacee">
+                        <h3 class="fuente colorBlanco textCenter"></h3>
+                        <p class="fuente grisClaro textCenter"></p>
+                    </div>
+
+                <!--barra de reproducción con tiempos-->
+                <div id="barraTiempo" class="w90 df columna spaceb margin-bottom">
+                    <div class="w100 df spaceb">
+
+                    <!--tiempo consumido-->
+                        <p id="tiempoConsumido" class="fuente grisClaro">00:00</p>
+                        <!--tiempo total-->
+                        <p id="duracionTotal" class="fuente grisClaro"></p>
+                    </div>
+                    <!--barra de tiempo (div con after)-->
+                        <div id="barra" class="w100 bordeRedondo posRel">
+                        </div>
+
+                </div>
+
+                <!--comandos del reproductor-->
+                <div class="df centerX centerY w60 spacee margin-bottom">
+
+                    <!--boton anterior-->
+                    <button id="buttonAn" class="fondoTransparente sinBorde"><img src="assets/resources/Stop_and_play_fill-1.svg" alt=""></button>
+
+                    <!--boton play-->
+                    <button id="play" class="fondoRosa sinBorde bordeRedondo df centerX centerY"><i class="bi bi-play-fill blanco"></i></button>
+
+                    <!--boton siguiente-->
+                    <button id="buttonSig" class="fondoTransparente sinBorde"><img src="assets/resources/Stop_and_play_fill_reverse.svg" alt=""></button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+    <script type="text/javascript" src="assets/script.js"></script>
+
+</body>
+</html>
